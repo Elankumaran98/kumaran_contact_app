@@ -1,12 +1,23 @@
 import React from "react";
 
-const AddContact=()=>{
-    return(
-        <div className='ui header menu'>
-            <div className='ui header center'>
-                <h2>Contact Manager</h2>
+class AddContact extends React.Component{
+    render(){
+        return(
+            <div className='ui main'>
+                <h2>Add Contact</h2>
+                <form className='ui form'>
+                    <div className='field'>
+                        <labal>Name</labal>
+                        <input type='text' name='Name' placeholder='Name' /> 
+                    </div>
+                    <div className='field'>
+                        <labal>Name</labal>
+                        <input type='text' name='Email' placeholder='Email' /> 
+                    </div>
+                </form>
             </div>
-        </div>
-    );
+        );
+    }
 }
+
 export default AddContact;
