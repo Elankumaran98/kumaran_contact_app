@@ -1,12 +1,15 @@
 import React from "react";
 
-const ContactCard=()=>{
+const ContactCard=(props)=>{
+    const {id,name,email}=props.contact;
     return(
-        <div className='ui header menu'>
-            <div className='ui header center'>
-                <h2>Contact Manager</h2>
-            </div>
-        </div>
+      <div className="item">
+      <div className="content">
+        <div className="header">{name}</div>
+        <div className="header">{email}</div>
+      </div>
+      <i className='trash icon'></i>
+    </div>
     );
 }
 export default ContactCard;

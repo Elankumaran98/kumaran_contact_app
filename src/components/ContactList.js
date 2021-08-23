@@ -1,12 +1,15 @@
 import React from "react";
+import ContactCard from "./ContactCard";
 
-const ContactList=()=>{
-    return(
-        <div className='ui header menu'>
-            <div className='ui header center'>
-                <h2>Contact Manager</h2>
-            </div>
-        </div>
+const ContactList = (props) => {
+  console.log(props);
+  const renderContactList = props.contacts.map((contact) => {
+    return (
+      <ContactCard contact={contact}></ContactCard>
     );
-}
+  });
+  return <div className="ui phone list">
+    {renderContactList}
+  </div>;
+};
 export default ContactList;
