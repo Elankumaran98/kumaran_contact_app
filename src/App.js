@@ -8,10 +8,14 @@ function App() {
   const [contacts,setContacts]=useState(
     []
   );
+  const addContactHandiler=(contact)=>{
+    console.log(contact);
+    setContacts([...contacts,contact]);
+  }
   return (
     <div className='ui container'>
       <Header/>
-      <AddContact/>
+      <AddContact addContactHandiler={addContactHandiler}/>
       <ContactList contacts={contacts}/>
     </div>
   );

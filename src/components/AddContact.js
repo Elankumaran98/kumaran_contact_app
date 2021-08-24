@@ -11,7 +11,8 @@ class AddContact extends React.Component {
           alert("Please Fill All Gaps");
           return
       }
-      console.log(this.this.state);
+      this.props.addContactHandiler(this.state);
+      this.setState({name:"",email:""})
   }
   render() {
     return (
