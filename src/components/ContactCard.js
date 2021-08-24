@@ -10,7 +10,9 @@ const ContactCard=(props)=>{
       <div className="content">
         <div className="header">{name}</div>
         <div className="header">{email}</div>
-        <i className='trash icon' style={{color:'red',marginTop:'7px'}}></i>
+        <i className='trash icon'
+        onClick={()=>props.clickHandler(id)}
+         style={{color:'red',marginTop:'7px'}}></i>
       </div>
     </div>
     );
