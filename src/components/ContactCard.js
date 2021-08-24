@@ -1,14 +1,16 @@
 import React from "react";
+import theme from '../images/theme.jpg';
 
 const ContactCard=(props)=>{
     const {id,name,email}=props.contact;
     return(
       <div className="item">
+        <img className='ui avatar image' src={theme} alt='theme'/>
       <div className="content">
         <div className="header">{name}</div>
         <div className="header">{email}</div>
+        <i className='trash icon' style={{color:'red',marginTop:'7px'}}></i>
       </div>
-      <i className='trash icon'></i>
     </div>
     );
 }
