@@ -2,6 +2,7 @@ import React from "react";
 import theme from '../images/theme.jpg';
 
 const ContactCard=(props)=>{
+    // eslint-disable-next-line no-unused-vars
     const {id,name,email}=props.contact;
     return(
       <div className="item">
