@@ -5,6 +5,7 @@ import { uuid } from "uuidv4";
 import AddContact from "./components/AddContact";
 import ContactList from "./components/ContactList";
 import Header from "./components/Header";
+import ContactDetails from "./components/ContactDetail";
 
 function App() {
   const LOCAL_STORAGE_KEY = "contacts";
@@ -50,6 +51,8 @@ function App() {
             render={(props)=><AddContact {...props}
             addContactHandiler={addContactHandiler}/>}
           />
+
+          <Route path="/contact/:id" component={ContactDetails}></Route>
         </Switch>
       </Router>
     </div>
