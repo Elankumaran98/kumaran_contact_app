@@ -40,7 +40,7 @@ class AddContact extends React.Component {
               onChange={(e) => this.setState({ email: e.target.value })}
             />
           </div>
-          <button className="ui button">Add Contact</button>
+          <button className="ui btn btn-primary">Add Contact</button>
         </form>
       </div>
     );

@@ -5,7 +5,7 @@ import theme from "../images/theme.jpg";
 const ContactCard = (props) => {
   const { id, name, email } = props.contact;
   return (
-    <div className="item">
+    <div className="item text-center">
       <img className="ui avatar image" src={theme} alt="theme" />
       <div className="content">
         <Link
