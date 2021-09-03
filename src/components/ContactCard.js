@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import theme from "../images/theme.jpg";
 
 const ContactCard = (props) => {
-  const { id, name, email } = props.contact;
+  const { id, FirstName, LastName, Email, Phone } = props.contact;
   return (
-    <div className="item text-center">
-      <img className="ui avatar image" src={theme} alt="theme" />
+    <div className="item text-center bg-info">
+      <img className="ui avatar image w-25 h-25" src={theme} alt="theme" />
       <div className="content">
         <Link
           to={{
@@ -16,8 +16,10 @@ const ContactCard = (props) => {
             },
           }}
         >
-          <div className="header"> {name}</div>
-          <div className="header">{email}</div>
+          <div className="header">First Name :{FirstName}</div>
+          <div className="header">Last Name :{LastName}</div>
+          <div className="header">Email :{Email}</div>
+          <div className="header">Phone :{Phone}</div>
         </Link>
         <i
           className="trash icon"

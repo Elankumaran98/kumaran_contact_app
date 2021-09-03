@@ -19,7 +19,7 @@ const ContactList = (props) => {
     );
   });
   return (
-    <div className="ui phone list ">
+    <div className="ui phone list p-3">
         <h2 className="p-5">
           Contact List :
           <Link to="/add">

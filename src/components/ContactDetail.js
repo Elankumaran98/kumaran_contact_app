@@ -4,16 +4,18 @@ import { Button } from "semantic-ui-react";
 import theme from '../images/theme.jpg';
 
 const ContactDetails=(props)=>{
-    const {name,email}=props.location.state.contact;
+    const { FirstName, LastName, Email, Phone}=props.location.state.contact;
     return(
-      <div className="main">
-          <div className="ui card centered">
+      <div className="container bg-info ">
+          <div className="card centered">
               <div className="image">
                   <img src={theme} alt="theme"/>
               </div>
               <div className="content">
-                  <div className="header">{name}</div>
-                  <div className="descroption">{email}</div>
+                  <div className="header">{FirstName}</div>
+                  <div className="header">{LastName}</div>
+                  <div className="descroption">{Email}</div>
+                  <div className="descroption">{Phone}</div>
               </div>
           </div>
           <div className="center-div">
