@@ -12,10 +12,10 @@ const ContactDetails=(props)=>{
                   <img src={theme} alt="theme"/>
               </div>
               <div className="content">
-                  <div className="header">{FirstName}</div>
-                  <div className="header">{LastName}</div>
-                  <div className="descroption">{Email}</div>
-                  <div className="descroption">{Phone}</div>
+                  <div className="header ">{FirstName}</div>
+                  <div className="header ">{LastName}</div>
+                  <div className="header ">{Email}</div>
+                  <div className="header">{Phone}</div>
               </div>
           </div>
           <div className="center-div">

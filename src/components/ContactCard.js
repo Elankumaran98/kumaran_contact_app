@@ -16,13 +16,13 @@ const ContactCard = (props) => {
             },
           }}
         >
-          <div className="header">First Name :{FirstName}</div>
-          <div className="header">Last Name :{LastName}</div>
-          <div className="header">Email :{Email}</div>
-          <div className="header">Phone :{Phone}</div>
+          <div className="h1 pb-4 pt-4">First Name :{FirstName}</div>
+          <div className="h1 pb-4">Last Name :{LastName}</div>
+          <div className="h1 pb-4">Email :{Email}</div>
+          <div className="h1 pb-4">Phone :{Phone}</div>
         </Link>
         <i
-          className="trash icon"
+          className="trash icon py-3"
           onClick={() => props.clickHandler(id)}
           style={{ color: "red", marginTop: "7px" }}
         ></i>
