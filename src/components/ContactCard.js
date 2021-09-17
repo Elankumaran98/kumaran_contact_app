@@ -10,7 +10,7 @@ const ContactCard = (props) => {
       <div className="content">
         <Link
           to={{
-            pathname: "/contact/${id}",
+            pathname: `/contact/${id}`,
             state: {
               contact: props.contact,
             },
@@ -22,7 +22,7 @@ const ContactCard = (props) => {
           <div className="h1 pb-4">Phone :{Phone}</div>
         </Link>
         <i
-          className="trash icon py-3"
+          className="trash icon py-3 "
           onClick={() => props.clickHandler(id)}
           style={{ color: "red", marginTop: "7px" }}
         ></i>
